@@ -1,0 +1,95 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+
+.logo{
+    text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 5px;
+    border-bottom: 3px solid rgba(187, 183, 182, 0.918);
+    color: rgba(187, 183, 182, 0.918);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url(фон.jpeg) center
+    no-repeat;
+    background-size: cover;
+}
+
+.nav_login{
+    color: rgba(187, 183, 182, 0.918);
+    text-transform: uppercase;
+    margin: 10px;
+    padding: 5px 10px;
+    width: 450px;
+    font-weight: 700;
+}
+
+form{
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.603);
+    width: 500px;
+    height: 550px;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+.form-control{
+    height: 20px;
+    margin: 0 auto;
+    width: 450px;
+    display: none;
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, san; 
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
+
+
+label{
+    border-left: 0cm;
+}
+
+.btn{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.918);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.918);
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, san;
+    background-color: #ffc107;
+    border-color: #ffc107;
+    padding: 8px 30px;
+    transition: 0.3s linear, color 0.3s linear;
+}
+
+.btn:hover{
+    background-color: rgba(184, 182, 170, 0.397);
+    color: rgb(255, 255, 255);
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
