@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+body{
+background: white;
+color: black;
+font-size: 25px;
+font-weight: 600;
+font-family: 'Roboto'
+}
+h1{
+color: pink
+}
+.ocean{
+width: 200px;
+border-radius: 28px;
+box-shadow: 6px 7px 16px rgba(0,0,0,025)
+}
