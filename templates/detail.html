@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ contact.title }}</title>
+</head>
+<body>
+<div class="container mt-5">
+    <h2>{{contact.title}}</h2>
+
+    <div class="alert alert-info">
+        <p>{{contact.text}}</p>
+        <p><b>Date: {{contact.date.date()}}</b></p>
+        <a href="/posts/{{ contact.id }}/delete"  class="btn btn-danger">Удалить</a>
+        <a href="/posts/{{ contact.id }}/update"  class="btn btn-success">Редактировать</a>
+    </div>
+</div>
+</body>
+</html>

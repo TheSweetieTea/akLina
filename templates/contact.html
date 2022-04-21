@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Dancing+Script:wght@400;600&family=Josefin+Sans&family=Poppins:ital,wght@0,300;1,200&family=Roboto+Slab:wght@100;200;300&family=Roboto:ital,wght@0,400;0,500;1,500&display=swap');
+    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Dancing+Script:wght@400;600&family=Poppins:wght@300&family=Roboto:ital,wght@0,400;0,500;1,500&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзыв</title>
+</head>
+<body>
+<div class="intro">
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="logo">akLina</div>
+                <nav class="nav">
+                    <input class="search" type="text" name="" placeholder="Искать">
+                    <a class="search-btn" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a class="nav__link" href="/contact">отзыв</a>
+                    <a class="nav__link" href="/posts">Посты</a>
+                    <a class="nav__link" href="/messenger">Мессенджер</a>
+                    <a class="nav__link" href="/signup">Регистрация/Войти</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="form">
+        <h1 class="logo1">отзыв</h1><br>
+        <form method="post">
+            <h3 class="sublogo">имя:</h3>
+            <input type="text" name="title" id="title" class="form-control"><br>
+            <h3 class="sublogo">комментарий:</h3>
+            <textarea type="text" name="text" id="text" class="form-control"></textarea><br>
+            <input type="submit" class="btn btn-warning" value="отправить">  
+        </form>
+    </div>
+</div>
+<script src="https://kit.fontawesome.com/2c90a18402.js" crossorigin="anonymous"></script>
+</body>
+</html>
+

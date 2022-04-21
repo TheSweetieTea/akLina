@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Редактировать</title>
+</head>
+<body>
+<header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="logo">akLina</div>
+                <nav class="nav">
+                    <input class="search" type="text" name="" placeholder="Искать">
+                    <a class="search-btn" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a class="nav__link" href="/contact">отзыв</a>
+                    <a class="nav__link" href="/posts">Посты</a>
+                    <a class="nav__link" href="/messenger">Мессенджер</a>
+                    <a class="nav__link" href="/signup">Регистрация/Войти</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+<div class="container mt-5">
+  <h1>Редактирование отзыва</h1>
+  <div class="form">
+      <form method="post">
+          <input type="text" name="title" id="title" class="form-control" placeholder="Введите имя" value="{{ contact.title }}"><br>
+          <textarea type="text" name="text" id="text" class="form-control" placeholder="Введите комментарий">{{ contact.text }}</textarea><br>
+          <input type="submit" class="btn btn-success" value="Сохранить">
+      </form>
+  </div>
+    <script src="https://kit.fontawesome.com/2c90a18402.js" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/posts.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Посты</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="logo">akLina</div>
+                <nav class="nav">
+                    <input class="search" type="text" name="" placeholder="Искать">
+                    <a class="search-btn" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a class="nav__link" href="/contact">отзыв</a>
+                    <a class="nav__link" href="/posts">Посты</a>
+                    <a class="nav__link" href="/messenger">Мессенджер</a>
+                    <a class="nav__link" href="/signup">Регистрация/Войти</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container2">
+        <h1 class="logo">Все отзывы на сайте</h1>
+                {% for el in contacts %}
+                    <div class="alert alert-info">
+                        <h2>{{ el.title }}</h2>
+                        <p><b>{{ el.text}}</b></p>
+                        <p><b>Date: {{ el.date.date() }}</b></p>
+                        <a href="/posts/{{ el.id }}" class="btn btn-warning">Подробнее</a>
+                    </div>
+                {% endfor %}
+    <div>
+        <script src="https://kit.fontawesome.com/2c90a18402.js" crossorigin="anonymous"></script>
+</body>
+</html>
+

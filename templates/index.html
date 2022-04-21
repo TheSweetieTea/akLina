@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Dancing+Script:wght@400;600&family=Josefin+Sans&family=Ms+Madi&family=Poppins:ital,wght@0,300;1,200&family=Roboto+Slab:wght@100;200;300&family=Roboto:ital,wght@0,400;0,500;1,500&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Dancing+Script:wght@400;600&family=Poppins:wght@300&family=Roboto:ital,wght@0,400;0,500;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>akLina</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="logo">akLina</div>
+                <nav class="nav">
+                    <input class="search" type="text" name="" placeholder="Искать">
+                    <a class="search-btn" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a class="nav__link" href="/contact">отзыв</a>
+                    <a class="nav__link" href="/posts">Посты</a>
+                    <a class="nav__link" href="/messenger">Мессенджер</a>
+                    <a class="nav__link" href="/signup">Регистрация/Войти</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="intro"> 
+        <div class="container">
+            <div class="intro_inner">
+                <h2 class="intro_sup">have a great time!</h2>
+                <h1 class="intro_title">welcome to aklina</h1>
+                <a class="btn" href="/learn">узнать больше</a>
+            </div>
+        </div>
+    </div>
+    <section class="section">
+        <div class="container">
+            <div class="section_header">What we do?</div>
+            <h2 class="section_title">story about us</h2>
+            <div class="section_text">
+                <p>Education is an admirable thing, but it is well to remember from time to time that nothing that is worth knowing can be taught.</p>
+            </div>
+        </div>
+        <div class="about">
+            <div class="about_title">
+                <div class="img">
+                    <img src="static\css\1.webp" alt="">
+                </div>
+                <div class="about_text">комфортная работа</div>
+            </div>
+            <div class="about_title">
+                <div class="img">
+                    <img src="static\css\2.jpeg" alt="">
+                </div>
+                <div class="about_text">образ жизни</div>
+            </div>
+            <div class="about_title">
+                <div class="img">
+                    <img src="static\css\5.jpeg" alt="">
+                </div>
+                <div class="about_text">сплочённая команда</div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-bs">
+        <div class="row">
+        <div class="col-md-3 footer-brand animated fadeInLeft">
+        <h2>akLina</h2>
+        <p>Suspendisse hendrerit tellus laoreet luctus pharetra. Aliquam porttitor vitae orci nec ultricies. Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex mi ut sem.</p>
+        <p>© 2022 Alijonov progect</p>
+        </div>
+        <div class="col-md-4 footer-nav animated fadeInUp">
+        <h4>Menu —</h4>
+        <div class="col-md-6">
+        <ul class="pages">
+        <li><a href="#">Travel</a></li>
+        <li><a href="#">Nature</a></li>
+        <li><a href="#">Explores</a></li>
+        <li><a href="#">Science</a></li>
+        <li><a href="#">Advice</a></li>
+        </ul>
+        </div>
+        <div class="col-md-6">
+        <ul class="list">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contacts</a></li>
+        <li><a href="#">Terms & Condition</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        </div>
+        </div>
+        <div class="col-md-2 footer-social animated fadeInDown">
+        <h4>Follow Us</h4>
+        <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">RSS</a></li>
+        </ul>
+        </div>
+        <div class="col-md-3 footer-ns animated fadeInRight">
+        <h4>Newsletter</h4>
+        <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
+        <p>
+        <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search for...">
+        <span class="input-group-btn">
+        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+        </span>
+        </div><!-- /input-group -->
+        </p>
+        </div>
+        </div>
+        </footer>
+    <script src="https://kit.fontawesome.com/2c90a18402.js" crossorigin="anonymous"></script>
+</body>
+</html>

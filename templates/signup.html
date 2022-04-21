@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/signup.css') }}">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Dancing+Script:wght@400;600&family=Josefin+Sans&family=Poppins:ital,wght@0,300;1,200&family=Roboto+Slab:wght@100;200;300&family=Roboto:ital,wght@0,400;0,500;1,500&display=swap');
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+</head>
+<body>
+<div class="intro">
+    <form >
+        <h1 class="logo">Регистрация</h1>
+        <br>
+        <div>
+            <label class="nav_login" for="name">имя:</label>
+            <input type="text" id="name" class="form-control">
+        </div>
+        <br>
+        <div>
+            <label class="nav_login" for="surname">фамилия:</label>
+            <input type="text" id="surname" class="form-control">
+        </div>
+        <br>
+        <div>
+            <label class="nav_login" for="email">email:</label>
+            <input type="email" id="email" class="form-control">
+        </div>
+        <br>
+        <div>
+            <label class="nav_login" for="password">пароль:</label> 
+            <input type="password" id="password" class="form-control">
+        </div>
+        <br>
+        <div>
+            <center><button type="submit" class="btn">отправить</button></center>
+        </div>
+    </form>
+</div>
+</body>
+</html>
